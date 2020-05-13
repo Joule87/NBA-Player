@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F4D92218246C1DC300EB4593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92217246C1DC300EB4593 /* AppDelegate.swift */; };
 		F4D9221A246C1DC300EB4593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92219246C1DC300EB4593 /* SceneDelegate.swift */; };
-		F4D9221C246C1DC300EB4593 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9221B246C1DC300EB4593 /* ContentView.swift */; };
+		F4D9221C246C1DC300EB4593 /* PlayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9221B246C1DC300EB4593 /* PlayerDetail.swift */; };
 		F4D9221E246C1DC400EB4593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D9221D246C1DC400EB4593 /* Assets.xcassets */; };
 		F4D92221246C1DC400EB4593 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D92220246C1DC400EB4593 /* Preview Assets.xcassets */; };
 		F4D92224246C1DC400EB4593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D92222246C1DC400EB4593 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		F4D9223A246C1DC400EB4593 /* NBA_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92239246C1DC400EB4593 /* NBA_PlayerUITests.swift */; };
 		F4D92248246C1DE000EB4593 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92247246C1DE000EB4593 /* Player.swift */; };
 		F4D9224A246C276A00EB4593 /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92249246C276A00EB4593 /* StatText.swift */; };
+		F4D9224C246C41B900EB4593 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9224B246C41B900EB4593 /* PlayerRow.swift */; };
+		F4D9224F246C499C00EB4593 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9224E246C499C00EB4593 /* PlayerList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		F4D92214246C1DC300EB4593 /* NBA Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D92217246C1DC300EB4593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4D92219246C1DC300EB4593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4D9221B246C1DC300EB4593 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4D9221B246C1DC300EB4593 /* PlayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetail.swift; sourceTree = "<group>"; };
 		F4D9221D246C1DC400EB4593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4D92220246C1DC400EB4593 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4D92223246C1DC400EB4593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		F4D9223B246C1DC400EB4593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D92247246C1DE000EB4593 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F4D92249246C276A00EB4593 /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
+		F4D9224B246C41B900EB4593 /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		F4D9224E246C499C00EB4593 /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F470E1B9246C61A7007C7E36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4D92247246C1DE000EB4593 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4D9220B246C1DC300EB4593 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +115,14 @@
 		F4D92216246C1DC300EB4593 /* NBA Player */ = {
 			isa = PBXGroup;
 			children = (
-				F4D92247246C1DE000EB4593 /* Player.swift */,
+				F470E1B9246C61A7007C7E36 /* Model */,
+				F4D9224D246C496E00EB4593 /* View */,
 				F4D92217246C1DC300EB4593 /* AppDelegate.swift */,
 				F4D92219246C1DC300EB4593 /* SceneDelegate.swift */,
-				F4D9221B246C1DC300EB4593 /* ContentView.swift */,
 				F4D9221D246C1DC400EB4593 /* Assets.xcassets */,
 				F4D92222246C1DC400EB4593 /* LaunchScreen.storyboard */,
 				F4D92225246C1DC400EB4593 /* Info.plist */,
 				F4D9221F246C1DC400EB4593 /* Preview Content */,
-				F4D92249246C276A00EB4593 /* StatText.swift */,
 			);
 			path = "NBA Player";
 			sourceTree = "<group>";
@@ -140,6 +151,17 @@
 				F4D9223B246C1DC400EB4593 /* Info.plist */,
 			);
 			path = "NBA PlayerUITests";
+			sourceTree = "<group>";
+		};
+		F4D9224D246C496E00EB4593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4D9224B246C41B900EB4593 /* PlayerRow.swift */,
+				F4D9221B246C1DC300EB4593 /* PlayerDetail.swift */,
+				F4D92249246C276A00EB4593 /* StatText.swift */,
+				F4D9224E246C499C00EB4593 /* PlayerList.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +298,10 @@
 				F4D92248246C1DE000EB4593 /* Player.swift in Sources */,
 				F4D92218246C1DC300EB4593 /* AppDelegate.swift in Sources */,
 				F4D9221A246C1DC300EB4593 /* SceneDelegate.swift in Sources */,
-				F4D9221C246C1DC300EB4593 /* ContentView.swift in Sources */,
+				F4D9221C246C1DC300EB4593 /* PlayerDetail.swift in Sources */,
 				F4D9224A246C276A00EB4593 /* StatText.swift in Sources */,
+				F4D9224F246C499C00EB4593 /* PlayerList.swift in Sources */,
+				F4D9224C246C41B900EB4593 /* PlayerRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

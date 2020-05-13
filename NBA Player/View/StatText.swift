@@ -13,11 +13,6 @@ struct StatText: View {
     var statName: String
     var statValue: String
     
-//    init(statName: String, statValue: String) {
-//        self.statName = statName
-//        self.statValue = statValue
-//    }
-    
     var body: some View {
         HStack {
             Text(statName + ":").padding(.leading, 30).font(Font.system(size: 45).bold())
