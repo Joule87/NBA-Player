@@ -15,6 +15,8 @@
 		F4D92224246C1DC400EB4593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D92222246C1DC400EB4593 /* LaunchScreen.storyboard */; };
 		F4D9222F246C1DC400EB4593 /* NBA_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9222E246C1DC400EB4593 /* NBA_PlayerTests.swift */; };
 		F4D9223A246C1DC400EB4593 /* NBA_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92239246C1DC400EB4593 /* NBA_PlayerUITests.swift */; };
+		F4D92248246C1DE000EB4593 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92247246C1DE000EB4593 /* Player.swift */; };
+		F4D9224A246C276A00EB4593 /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D92249246C276A00EB4593 /* StatText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F4D92235246C1DC400EB4593 /* NBA PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NBA PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D92239246C1DC400EB4593 /* NBA_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBA_PlayerUITests.swift; sourceTree = "<group>"; };
 		F4D9223B246C1DC400EB4593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D92247246C1DE000EB4593 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F4D92249246C276A00EB4593 /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		F4D92216246C1DC300EB4593 /* NBA Player */ = {
 			isa = PBXGroup;
 			children = (
+				F4D92247246C1DE000EB4593 /* Player.swift */,
 				F4D92217246C1DC300EB4593 /* AppDelegate.swift */,
 				F4D92219246C1DC300EB4593 /* SceneDelegate.swift */,
 				F4D9221B246C1DC300EB4593 /* ContentView.swift */,
@@ -106,6 +111,7 @@
 				F4D92222246C1DC400EB4593 /* LaunchScreen.storyboard */,
 				F4D92225246C1DC400EB4593 /* Info.plist */,
 				F4D9221F246C1DC400EB4593 /* Preview Content */,
+				F4D92249246C276A00EB4593 /* StatText.swift */,
 			);
 			path = "NBA Player";
 			sourceTree = "<group>";
@@ -267,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D92248246C1DE000EB4593 /* Player.swift in Sources */,
 				F4D92218246C1DC300EB4593 /* AppDelegate.swift in Sources */,
 				F4D9221A246C1DC300EB4593 /* SceneDelegate.swift in Sources */,
 				F4D9221C246C1DC300EB4593 /* ContentView.swift in Sources */,
+				F4D9224A246C276A00EB4593 /* StatText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
