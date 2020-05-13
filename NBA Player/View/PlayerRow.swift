@@ -19,7 +19,7 @@ struct PlayerRow: View {
         HStack {
             Image(player.imageName).resizable().scaledToFit().clipShape(Circle()).background(Circle().foregroundColor(player.team.color))
                 .padding(.leading, 20) .padding(.trailing, 5).padding(.top, 5).padding(.bottom, 5)
-            Text(player.name).font(.system(size: 30)).bold()
+            Text(player.name).font(.system(size: 30)).bold().lineLimit(1).minimumScaleFactor(0.5)
             Spacer()
         }
     }

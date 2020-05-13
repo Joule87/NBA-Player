@@ -20,7 +20,7 @@ struct PlayerDetail: View {
         VStack {
             Image(player.team.imageName).resizable().aspectRatio(contentMode: .fit)
             Image(player.imageName).clipShape(Circle()).background(Circle().foregroundColor(player.team.color)).overlay(Circle().stroke(Color.white, lineWidth: 4)).offset(x: 0, y: -90).padding(.bottom, -90).shadow(radius: 15)
-            Text(player.name).font(.system(size: 45)).bold()
+            Text(player.name).font(.system(size: 45)).bold().lineLimit(1).padding(.horizontal, 15.0).minimumScaleFactor(0.5)
             StatText(statName: "Age", statValue: "\(player.age)")
             StatText(statName: "Height", statValue: "\(player.height)")
             StatText(statName: "Wright", statValue: "\(player.weight)lbs")
@@ -31,6 +31,9 @@ struct PlayerDetail: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerDetail(player: players[1])
+        Group {
+            PlayerDetail(player: players[2]).previewDevice("iPhone 8")
+            PlayerDetail(player: players[1]).previewDevice("iPhone 11 Max Pro")
+        }
     }
 }

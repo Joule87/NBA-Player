@@ -15,8 +15,8 @@ struct StatText: View {
     
     var body: some View {
         HStack {
-            Text(statName + ":").padding(.leading, 30).font(Font.system(size: 45).bold())
-            Text(statValue).font(.system(size: 45)).fontWeight(.light).padding(.trailing, 30)
+            Text(statName + ":").padding(.leading, 30).font(Font.system(size: 35).bold())
+            Text(statValue).font(.system(size: 35)).fontWeight(.light).padding(.trailing, 30)
             Spacer()
         }
     }

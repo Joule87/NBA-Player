@@ -22,6 +22,9 @@ struct PlayerList: View {
 
 struct PlayerList_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerList()
+        Group {
+            PlayerList().previewDevice("iPhone 8")
+            PlayerList().previewDevice("iPhone 11 Max Pro")
+        }
     }
 }
